@@ -1,10 +1,16 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import './App.css';
+import PokemonCard from "./PokemonCard/PokemonCard";
 
 function App() {
-  return (
+const [endPoint , setEndPoint] = useState('https://pokeapi.co/api/v2/pokemon/')
+
+
+    return (
     <div>
-      Begin hier met de opdracht!
+
+        <PokemonCard endpoint={endPoint}/>
+
     </div>
   );
 }
