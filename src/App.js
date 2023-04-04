@@ -13,7 +13,7 @@ const [endPoint , setEndPoint] = useState('https://pokeapi.co/api/v2/pokemon/')
     useEffect(() => {
         async function fetchData() {
             try {
-                const {data} = await axios.get(endPoint);
+                const {data} = await axios.get(endPoint)
                 setPokemons(data);
             } catch (e) {
                 console.error(e);
@@ -26,16 +26,16 @@ const [endPoint , setEndPoint] = useState('https://pokeapi.co/api/v2/pokemon/')
     <div className='display'>
         <img className="pokemonLogo" src={pokemonLogo} alt="Pokemon logo" onClick={() => setEndPoint('https://pokeapi.co/api/v2/pokemon?offset=0&limit=20')}/>
         <section className="buttons">
-        <div className="pokeball-top-half">
-            <div className="pokeball-bottom-half">
+        <div className="pokeball-top-half" onClick={() => setEndPoint(pokemons.previous)}>
+            <div className="pokeball-bottom-half" onClick={() => setEndPoint(pokemons.previous)}>
                 <button
                     className="pokeball-button"
                     disabled={!pokemons.previous}
                     onClick={() => setEndPoint(pokemons.previous)}>Previous</button>
         </div>
             </div>
-            <div className="pokeball-top-half">
-                <div className="pokeball-bottom-half">
+            <div className="pokeball-top-half" onClick={() => setEndPoint(pokemons.next)}>
+                <div className="pokeball-bottom-half" onClick={() => setEndPoint(pokemons.next)}>
                     <button
                         className="pokeball-button"
                         disabled={!pokemons.next}

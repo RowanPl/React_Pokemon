@@ -74,7 +74,7 @@ body{
 
     /*-----------------------------TYPES-----------------------------------*/
 .water{
-    background-image: linear-gradient(-45deg, slateblue, royalblue ,lightskyblue);
+    background-image: linear-gradient(-45deg,royalblue, var(--water) ,lightskyblue);
     border: var(--water) solid 10px;
 }
 .water .name-hp{
