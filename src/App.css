@@ -34,12 +34,16 @@ width: 30vw;
     src: url("Fonts/Pokemon Solid.ttf");
 }
 
-body{
+body {
     font-family: PokemonHollow, serif;
+
+}
+@media only screen and (min-width: 1070px){
+body {
     background-image: url("/src/assets/background_prairie_pokemon_screencapture_by_nemotrex_de8nlib-fullview.jpg");
     background-size: 300%;
     background-repeat: no-repeat;
-
+}
 }
 
 .pokeball-button {
