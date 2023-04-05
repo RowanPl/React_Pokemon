@@ -4,6 +4,7 @@
     flex-direction: row;
     font-family: PokemonGba, Serif;
     margin-top: 40px;
+    justify-content: center;
 }
 .pokemonLogo{
 width: 30vw;
@@ -16,7 +17,7 @@ width: 30vw;
 .buttons{
     display: flex;
     flex-direction: row;
-    gap: 450px;
+    gap: 20vw;
     margin-top: 100px;
 }
 
@@ -36,13 +37,9 @@ width: 30vw;
 body{
     font-family: PokemonHollow, serif;
     background-image: url("/src/assets/background_prairie_pokemon_screencapture_by_nemotrex_de8nlib-fullview.jpg");
-    background-size: 200%;
+    background-size: 300%;
     background-repeat: no-repeat;
 
-}
-.title{
-    font-size: 60px;
-    margin: 0;
 }
 
 .pokeball-button {

@@ -13,15 +13,18 @@ body{
     margin: 0;
     padding: 0;
     background-color: rgba(255, 251, 225, 0.78);
+
 }
 
 .border{
     display: flex;
     margin: 20px;
-    width: 250px;
-    height: 300px;
+    width: 230px;
+    height: 260px;
     flex-direction: row;
     gap: 10px;
+    flex-shrink: 1;
+    flex-grow: 0;
 
 }
 .outline{
@@ -32,7 +35,7 @@ body{
     height: 100%;
     align-items: center;
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.38) 2px 6px;
+
 }
 .outline:hover{
     animation: gradient 7s infinite;
