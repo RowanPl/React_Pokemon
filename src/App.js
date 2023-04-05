@@ -6,7 +6,7 @@ import axios from "axios";
 import pokemonLogo from "./assets/Daco_5394286.png"
 
 function App() {
-const [endPoint , setEndPoint] = useState('https://pokeapi.co/api/v2/pokemon/')
+    const [endPoint, setEndPoint] = useState('https://pokeapi.co/api/v2/pokemon/')
     const [pokemons, setPokemons] = useState('')
 
 
@@ -19,40 +19,44 @@ const [endPoint , setEndPoint] = useState('https://pokeapi.co/api/v2/pokemon/')
                 console.error(e);
             }
         }
+
         fetchData();
     }, [endPoint]);
 
     return (
-    <div className='display'>
-        <img className="pokemonLogo" src={pokemonLogo} alt="Pokemon logo" onClick={() => setEndPoint('https://pokeapi.co/api/v2/pokemon?offset=0&limit=20')}/>
-        <section className="buttons">
-        <div className="pokeball-top-half" onClick={() => setEndPoint(pokemons.previous)}>
-            <div className="pokeball-bottom-half" onClick={() => setEndPoint(pokemons.previous)}>
-                <button
-                    className="pokeball-button"
-                    disabled={!pokemons.previous}
-                    onClick={() => setEndPoint(pokemons.previous)}>Previous</button>
-        </div>
-            </div>
-            <div className="pokeball-top-half" onClick={() => setEndPoint(pokemons.next)}>
-                <div className="pokeball-bottom-half" onClick={() => setEndPoint(pokemons.next)}>
-                    <button
-                        className="pokeball-button"
-                        disabled={!pokemons.next}
-                        onClick={() => setEndPoint(pokemons.next)}>Next</button>
-
+        <div className='display'>
+            <img className="pokemonLogo" src={pokemonLogo} alt="Pokemon logo"
+                 onClick={() => setEndPoint('https://pokeapi.co/api/v2/pokemon?offset=0&limit=20')}/>
+            <section className="buttons">
+                <div className="pokeball-top-half" onClick={() => setEndPoint(pokemons.previous)}>
+                    <div className="pokeball-bottom-half" onClick={() => setEndPoint(pokemons.previous)}>
+                        <button
+                            className="pokeball-button"
+                            disabled={!pokemons.previous}
+                            onClick={() => setEndPoint(pokemons.previous)}>Previous
+                        </button>
+                    </div>
                 </div>
-            </div>
-        </section>
+                <div className="pokeball-top-half" onClick={() => setEndPoint(pokemons.next)}>
+                    <div className="pokeball-bottom-half" onClick={() => setEndPoint(pokemons.next)}>
+                        <button
+                            className="pokeball-button"
+                            disabled={!pokemons.next}
+                            onClick={() => setEndPoint(pokemons.next)}>Next
+                        </button>
+
+                    </div>
+                </div>
+            </section>
 
 
             <div className='Cards'>
-            {pokemons.results && pokemons.results.map((pokemon) => {
-                return <PokemonCard key={pokemon.name} endPoint={pokemon.url} />
-            })}
+                {pokemons.results && pokemons.results.map((pokemon) => {
+                    return <PokemonCard key={pokemon.name} endPoint={pokemon.url}/>
+                })}
             </div>
-    </div>
-  );
+        </div>
+    );
 }
 
 export default App;

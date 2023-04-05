@@ -9,14 +9,15 @@
         background-position: 0 50%;
     }
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
     background-color: rgba(255, 251, 225, 0.78);
 
 }
 
-.border{
+.border {
     display: flex;
     margin: 20px;
     width: 230px;
@@ -27,7 +28,8 @@ body{
     flex-grow: 0;
 
 }
-.outline{
+
+.outline {
     background-size: 600%;
     display: flex;
     flex-direction: column;
@@ -37,21 +39,24 @@ body{
     border-radius: 10px;
 
 }
-.outline:hover{
+
+.outline:hover {
     animation: gradient 7s infinite;
 }
-.underline{
+
+.underline {
     border-block: solid rgba(255, 255, 255, 0.56) 2px;
     width: 100%;
 
 }
-.textArea{
+
+.textArea {
     width: 100%;
     height: 100%;
 }
 
 /*-----------------------------colors-----------------------------------*/
-:root{
+:root {
     --water: #1c569b;
     --grass: #0c990c;
     --fire: #e1480f;
@@ -72,239 +77,286 @@ body{
     --flying: skyblue;
 
 
-
 }
 
-    /*-----------------------------TYPES-----------------------------------*/
-.water{
-    background-image: linear-gradient(-45deg,royalblue, var(--water) ,lightskyblue);
+/*-----------------------------TYPES-----------------------------------*/
+.water {
+    background-image: linear-gradient(-45deg, royalblue, var(--water), lightskyblue);
     border: var(--water) solid 10px;
 }
-.water .name-hp{
+
+.water .name-hp {
     background-color: var(--water);
 }
-.water .textArea{
+
+.water .textArea {
     background: var(--water);
 }
 
-.grass{
-    background-image: linear-gradient(-45deg, darkolivegreen ,limegreen ,var(--grass));
+.grass {
+    background-image: linear-gradient(-45deg, darkolivegreen, limegreen, var(--grass));
     border: var(--grass) solid 10px;
 }
-.grass .textArea{
+
+.grass .textArea {
     background: var(--grass);
 }
-.grass .name-hp{
+
+.grass .name-hp {
     background: var(--grass);
 }
 
 
-.fire{
-    background-image: linear-gradient(-45deg, darkred ,var(--fire), darkorange);
+.fire {
+    background-image: linear-gradient(-45deg, darkred, var(--fire), darkorange);
     border: var(--fire) solid 10px;
 }
-.fire .name-hp{
-    background-color: var(--fire);
-}.fire .textArea{
-     background-color: var(--fire);
- }
 
-.bug{
-    background-image: linear-gradient(-45deg, darkgreen ,mediumseagreen, var(--bug));
+.fire .name-hp {
+    background-color: var(--fire);
+}
+
+.fire .textArea {
+    background-color: var(--fire);
+}
+
+.bug {
+    background-image: linear-gradient(-45deg, darkgreen, mediumseagreen, var(--bug));
     border: var(--bug) solid 10px;
 }
-.bug .name-hp{
-    background-color: var(--bug) ;
-}
-.bug .textArea{
-    background-color: var(--bug) ;
+
+.bug .name-hp {
+    background-color: var(--bug);
 }
 
-.normal{
-    background-image: linear-gradient(-45deg,  var(--normal) ,rosybrown, dimgray);
+.bug .textArea {
+    background-color: var(--bug);
+}
+
+.normal {
+    background-image: linear-gradient(-45deg, var(--normal), rosybrown, dimgray);
     border: var(--normal) solid 10px;
 }
-.normal .name-hp {
-    background-color:  var(--normal);
-}
-.normal .textArea {
-     background-color:  var(--normal);
- }
 
-.poison{
-    background-image: linear-gradient(-45deg, mediumpurple ,rebeccapurple, var(--poison));
+.normal .name-hp {
+    background-color: var(--normal);
+}
+
+.normal .textArea {
+    background-color: var(--normal);
+}
+
+.poison {
+    background-image: linear-gradient(-45deg, mediumpurple, rebeccapurple, var(--poison));
     border: var(--poison) solid 10px;
 }
-.poison .name-hp{
+
+.poison .name-hp {
     background-color: var(--poison);
 }
-.poison .textArea{
-     background-color: var(--poison);
- }
 
-.electric{
-    background-image: linear-gradient(-45deg, var(--electric) , orange, lightyellow);
+.poison .textArea {
+    background-color: var(--poison);
+}
+
+.electric {
+    background-image: linear-gradient(-45deg, var(--electric), orange, lightyellow);
     border: var(--electric) solid 10px;
 }
-.electric .name-hp{
-    background-color: var(--electric);
-}
-.electric .textArea{
+
+.electric .name-hp {
     background-color: var(--electric);
 }
 
-.ground{
-    background-image: linear-gradient(-45deg, var(--ground) , rosybrown, sandybrown);
+.electric .textArea {
+    background-color: var(--electric);
+}
+
+.ground {
+    background-image: linear-gradient(-45deg, var(--ground), rosybrown, sandybrown);
     border: var(--ground) solid 10px;
 }
-.ground .name-hp{
+
+.ground .name-hp {
     background-color: var(--ground);
-}.ground .textArea{
-     background-color: var(--ground);
- }
-
-
-.fairy{
-    background-image: linear-gradient(-45deg, pink , lightpink, var(--fairy));
-    border:  var(--fairy) solid 10px;
 }
-.fairy .name-hp{
-    background-color:  var(--fairy);
-}
-.fairy .textArea{
-     background-color:  var(--fairy);
- }
 
-.fighting{
-    background-image: linear-gradient(-45deg, #b76c32 , lightpink, var(--fighting));
+.ground .textArea {
+    background-color: var(--ground);
+}
+
+
+.fairy {
+    background-image: linear-gradient(-45deg, pink, lightpink, var(--fairy));
+    border: var(--fairy) solid 10px;
+}
+
+.fairy .name-hp {
+    background-color: var(--fairy);
+}
+
+.fairy .textArea {
+    background-color: var(--fairy);
+}
+
+.fighting {
+    background-image: linear-gradient(-45deg, #b76c32, lightpink, var(--fighting));
     border: var(--fighting) solid 10px;
 }
-.fighting .name-hp{
+
+.fighting .name-hp {
     background-color: var(--fighting);
 }
-.fighting .textArea{
-     background-color: var(--fighting);
- }
 
-.psychic{
-    background-image: linear-gradient(-45deg, yellow , var(--psychic), lightyellow);
+.fighting .textArea {
+    background-color: var(--fighting);
+}
+
+.psychic {
+    background-image: linear-gradient(-45deg, yellow, var(--psychic), lightyellow);
     border: var(--psychic) solid 10px;
 }
-.psychic .name-hp{
+
+.psychic .name-hp {
     background-color: var(--psychic);
 }
-.psychic .textArea{
-     background-color: var(--psychic);
- }
 
-.rock{
+.psychic .textArea {
+    background-color: var(--psychic);
+}
+
+.rock {
     background-image: linear-gradient(-45deg, sandybrown, var(--rock), #6b3f09);
     border: var(--rock) solid 10px;
 }
-.rock .name-hp{
+
+.rock .name-hp {
     background-color: var(--rock);
 }
-.rock .textArea{
+
+.rock .textArea {
     background-color: var(--rock);
 }
-.ghost{
-    background-image: linear-gradient(-45deg, purple, #480448,  var(--ghost));
+
+.ghost {
+    background-image: linear-gradient(-45deg, purple, #480448, var(--ghost));
     border: var(--ghost) solid 10px;
 }
-.ghost .name-hp{
-    background-color:  var(--ghost);
-}
-.ghost .textArea{
-     background-color: var(--ghost);
- }
 
-.ice{
-     background-image: linear-gradient(-45deg,  var(--ice) , #c9d7fa, #85a4b0);
-     border: var(--ice) solid 10px;
- }
-.ice .name-hp{
-    background-color:  var(--ice) ;
+.ghost .name-hp {
+    background-color: var(--ghost);
 }
-.ice .textArea{
-     background-color:  var(--ice) ;
- }
 
-.dragon{
+.ghost .textArea {
+    background-color: var(--ghost);
+}
+
+.ice {
+    background-image: linear-gradient(-45deg, var(--ice), #c9d7fa, #85a4b0);
+    border: var(--ice) solid 10px;
+}
+
+.ice .name-hp {
+    background-color: var(--ice);
+}
+
+.ice .textArea {
+    background-color: var(--ice);
+}
+
+.dragon {
     background-image: linear-gradient(-45deg, var(--dragon), #c9d7fa, #230023);
     border: var(--dragon) solid 10px;
 }
-.dragon .name-hp{
+
+.dragon .name-hp {
     background-color: var(--dragon);
 }
-.dragon .textArea{
-     background-color: var(--dragon);
- }
 
-.dark{
+.dragon .textArea {
+    background-color: var(--dragon);
+}
+
+.dark {
     background-image: linear-gradient(-45deg, var(--dark), #111727, #6b006b);
     border: var(--dark) solid 10px;
 }
-.dark .name-hp{
+
+.dark .name-hp {
     background-color: var(--dark);
 }
-.dark .textArea{
+
+.dark .textArea {
     background-color: var(--dark);
 }
-.steel{
+
+.steel {
     background-image: linear-gradient(-45deg, var(--steel), slategrey, gray);
     border: var(--steel) solid 10px;
 }
-.steel .name-hp{
+
+.steel .name-hp {
     background-color: var(--steel);
 }
-.steel .textArea{
+
+.steel .textArea {
     background-color: var(--steel);
 }
-.flying{
+
+.flying {
     background-image: linear-gradient(-45deg, #d3f0f4, var(--flying), #5b90a7);
     border: var(--flying) solid 10px;
 }
-.flying .name-hp{
+
+.flying .name-hp {
     background-color: var(--flying);
 }
-.flying .textArea{
+
+.flying .textArea {
     background-color: var(--flying);
 }
+
 /*-----------------------------CSS-----------------------------------*/
-section p{
+section p {
     margin: 5px;
 }
 
-p{
+p {
     color: black;
 }
-li{
+
+li {
     list-style: none;
 }
-ul{
-display: flex;
+
+ul {
+    display: flex;
     color: black;
     flex-direction: column;
     padding: 0;
     align-items: center;
     font-size: 12px;
 }
-.name-hp{
+
+.name-hp {
     display: flex;
     flex-direction: row;
     align-items: baseline;
     width: 100%;
     font-size: 12px;
 }
-.name{
+
+.name {
     margin-right: auto;
 }
-.hp{
+
+.hp {
     font-size: 8px;
     display: flex;
     align-items: flex-end;
 }
-.colorfix{
+
+.colorfix {
     background-color: rgba(255, 255, 255, 0.25);
     width: 100%;
     height: 100%;
@@ -314,13 +366,14 @@ display: flex;
     align-items: center;
 }
 
-.colorfix > p{
+.colorfix > p {
     display: flex;
     justify-content: center;
     padding-top: 3px;
 
 }
-.colorfix > p:first-child{
+
+.colorfix > p:first-child {
     font-size: 7px;
     margin-bottom: 10px;
     font-weight: bold;
