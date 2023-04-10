@@ -1,0 +1,381 @@
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255, 251, 225, 0.78);
+
+}
+
+.border {
+    display: flex;
+    margin: 20px;
+    width: 230px;
+    height: 260px;
+    flex-direction: row;
+    gap: 10px;
+    flex-shrink: 1;
+    flex-grow: 0;
+
+}
+
+.outline {
+    background-size: 600%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    border-radius: 10px;
+
+}
+
+.outline:hover {
+    animation: gradient 7s infinite;
+}
+
+.underline {
+    border-block: solid rgba(255, 255, 255, 0.56) 2px;
+    width: 100%;
+
+}
+
+.textArea {
+    width: 100%;
+    height: 100%;
+}
+
+/*-----------------------------colors-----------------------------------*/
+:root {
+    --water: #1c569b;
+    --grass: #0c990c;
+    --fire: #e1480f;
+    --bug: #a0c853;
+    --normal: #747474;
+    --poison: #9d1c9d;
+    --electric: #f3f33a;
+    --ground: #8b4d25;
+    --fairy: #f371af;
+    --fighting: #d04a4a;
+    --psychic: #f3de85;
+    --rock: #6b411a;
+    --ghost: #6b006b;
+    --ice: powderblue;
+    --dragon: rebeccapurple;
+    --dark: #5e4c74;
+    --steel: lightslategray;
+    --flying: skyblue;
+
+
+}
+
+/*-----------------------------TYPES-----------------------------------*/
+.water {
+    background-image: linear-gradient(-45deg, royalblue, var(--water), lightskyblue);
+    border: var(--water) solid 10px;
+}
+
+.water .name-hp {
+    background-color: var(--water);
+}
+
+.water .textArea {
+    background: var(--water);
+}
+
+.grass {
+    background-image: linear-gradient(-45deg, darkolivegreen, limegreen, var(--grass));
+    border: var(--grass) solid 10px;
+}
+
+.grass .textArea {
+    background: var(--grass);
+}
+
+.grass .name-hp {
+    background: var(--grass);
+}
+
+
+.fire {
+    background-image: linear-gradient(-45deg, darkred, var(--fire), darkorange);
+    border: var(--fire) solid 10px;
+}
+
+.fire .name-hp {
+    background-color: var(--fire);
+}
+
+.fire .textArea {
+    background-color: var(--fire);
+}
+
+.bug {
+    background-image: linear-gradient(-45deg, darkgreen, mediumseagreen, var(--bug));
+    border: var(--bug) solid 10px;
+}
+
+.bug .name-hp {
+    background-color: var(--bug);
+}
+
+.bug .textArea {
+    background-color: var(--bug);
+}
+
+.normal {
+    background-image: linear-gradient(-45deg, var(--normal), rosybrown, dimgray);
+    border: var(--normal) solid 10px;
+}
+
+.normal .name-hp {
+    background-color: var(--normal);
+}
+
+.normal .textArea {
+    background-color: var(--normal);
+}
+
+.poison {
+    background-image: linear-gradient(-45deg, mediumpurple, rebeccapurple, var(--poison));
+    border: var(--poison) solid 10px;
+}
+
+.poison .name-hp {
+    background-color: var(--poison);
+}
+
+.poison .textArea {
+    background-color: var(--poison);
+}
+
+.electric {
+    background-image: linear-gradient(-45deg, var(--electric), orange, lightyellow);
+    border: var(--electric) solid 10px;
+}
+
+.electric .name-hp {
+    background-color: var(--electric);
+}
+
+.electric .textArea {
+    background-color: var(--electric);
+}
+
+.ground {
+    background-image: linear-gradient(-45deg, var(--ground), rosybrown, sandybrown);
+    border: var(--ground) solid 10px;
+}
+
+.ground .name-hp {
+    background-color: var(--ground);
+}
+
+.ground .textArea {
+    background-color: var(--ground);
+}
+
+
+.fairy {
+    background-image: linear-gradient(-45deg, pink, lightpink, var(--fairy));
+    border: var(--fairy) solid 10px;
+}
+
+.fairy .name-hp {
+    background-color: var(--fairy);
+}
+
+.fairy .textArea {
+    background-color: var(--fairy);
+}
+
+.fighting {
+    background-image: linear-gradient(-45deg, #b76c32, lightpink, var(--fighting));
+    border: var(--fighting) solid 10px;
+}
+
+.fighting .name-hp {
+    background-color: var(--fighting);
+}
+
+.fighting .textArea {
+    background-color: var(--fighting);
+}
+
+.psychic {
+    background-image: linear-gradient(-45deg, yellow, var(--psychic), lightyellow);
+    border: var(--psychic) solid 10px;
+}
+
+.psychic .name-hp {
+    background-color: var(--psychic);
+}
+
+.psychic .textArea {
+    background-color: var(--psychic);
+}
+
+.rock {
+    background-image: linear-gradient(-45deg, sandybrown, var(--rock), #6b3f09);
+    border: var(--rock) solid 10px;
+}
+
+.rock .name-hp {
+    background-color: var(--rock);
+}
+
+.rock .textArea {
+    background-color: var(--rock);
+}
+
+.ghost {
+    background-image: linear-gradient(-45deg, purple, #480448, var(--ghost));
+    border: var(--ghost) solid 10px;
+}
+
+.ghost .name-hp {
+    background-color: var(--ghost);
+}
+
+.ghost .textArea {
+    background-color: var(--ghost);
+}
+
+.ice {
+    background-image: linear-gradient(-45deg, var(--ice), #c9d7fa, #85a4b0);
+    border: var(--ice) solid 10px;
+}
+
+.ice .name-hp {
+    background-color: var(--ice);
+}
+
+.ice .textArea {
+    background-color: var(--ice);
+}
+
+.dragon {
+    background-image: linear-gradient(-45deg, var(--dragon), #c9d7fa, #230023);
+    border: var(--dragon) solid 10px;
+}
+
+.dragon .name-hp {
+    background-color: var(--dragon);
+}
+
+.dragon .textArea {
+    background-color: var(--dragon);
+}
+
+.dark {
+    background-image: linear-gradient(-45deg, var(--dark), #111727, #6b006b);
+    border: var(--dark) solid 10px;
+}
+
+.dark .name-hp {
+    background-color: var(--dark);
+}
+
+.dark .textArea {
+    background-color: var(--dark);
+}
+
+.steel {
+    background-image: linear-gradient(-45deg, var(--steel), slategrey, gray);
+    border: var(--steel) solid 10px;
+}
+
+.steel .name-hp {
+    background-color: var(--steel);
+}
+
+.steel .textArea {
+    background-color: var(--steel);
+}
+
+.flying {
+    background-image: linear-gradient(-45deg, #d3f0f4, var(--flying), #5b90a7);
+    border: var(--flying) solid 10px;
+}
+
+.flying .name-hp {
+    background-color: var(--flying);
+}
+
+.flying .textArea {
+    background-color: var(--flying);
+}
+
+/*-----------------------------CSS-----------------------------------*/
+section p {
+    margin: 5px;
+}
+
+p {
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    display: flex;
+    color: black;
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+    font-size: 12px;
+}
+
+.name-hp {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    width: 100%;
+    font-size: 12px;
+}
+
+.name {
+    margin-right: auto;
+}
+
+.hp {
+    font-size: 8px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.colorfix {
+    background-color: rgba(255, 255, 255, 0.25);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.colorfix > p {
+    display: flex;
+    justify-content: center;
+    padding-top: 3px;
+
+}
+
+.colorfix > p:first-child {
+    font-size: 7px;
+    margin-bottom: 10px;
+    font-weight: bold;
+
+}

@@ -1,0 +1,85 @@
+.Cards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-family: PokemonGba, Serif;
+    margin-top: 40px;
+    justify-content: center;
+}
+.pokemonLogo{
+width: 30vw;
+}
+.display{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 20vw;
+    margin-top: 100px;
+}
+
+@font-face {
+    font-family: PokemonGba ;
+    src: url("Fonts/PokemonGb-RAeo.ttf");
+}
+@font-face {
+    font-family: PokemonHollow;
+    src: url("Fonts/Pokemon Hollow.ttf");
+}
+@font-face {
+    font-family: PokemonSolid;
+    src: url("Fonts/Pokemon Solid.ttf");
+}
+
+body {
+    font-family: PokemonHollow, serif;
+
+}
+@media only screen and (min-width: 1070px){
+body {
+    background-image: url("/src/assets/background_prairie_pokemon_screencapture_by_nemotrex_de8nlib-fullview.jpg");
+    background-size: 300%;
+    background-repeat: no-repeat;
+}
+}
+
+.pokeball-button {
+    position: relative;
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    border: 6px solid black;
+    background: gray;
+    overflow: hidden;
+    z-index: 1;
+    top: -37px;
+    left: 37px;
+    font-family: PokemonGba;
+}
+
+.pokeball-top-half{
+    position: relative;
+    width: 150px;
+    height: 75px;
+    background: red;
+    border-radius: 12rem 12rem 0 0;
+    border: black solid 6px;
+    z-index: 0;
+    top: -60px;
+
+}
+.pokeball-bottom-half{
+    position: relative;
+    width: 150px;
+    height: 75px;
+    background: white;
+    border-radius: 0 0 12rem 12rem;
+    border: black solid 6px;
+    z-index: 0;
+    bottom: -70px;
+    left: -6px;
+}
+
